@@ -1,19 +1,19 @@
-/* أسلوب الصفحة بالكامل */
+/* ====== أسلوب الصفحة بالكامل ====== */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #fdf6f8; /* خلفية وردية فاتحة */
+  background: #fdf6f8; /* وردي فاتح */
   color: #333;
 }
 
-/* الهيدر */
+/* ====== الهيدر ====== */
 .top {
-  background: #f2c6d4; /* وردي فاتح */
+  background: #f2c6d4;
   padding: 20px;
   text-align: center;
 }
 
-/* الشعار والاسم */
+/* ====== الشعار والاسم ====== */
 .logo {
   display: flex;
   justify-content: center;
@@ -25,6 +25,9 @@ body {
   font-size: 64px;
   font-weight: bold;
   color: #a12c4a; /* لون M */
+  border: 3px solid #a12c4a; /* إطار */
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .school h1 {
@@ -37,7 +40,7 @@ body {
   color: #555;
 }
 
-/* الإيميل الكبير */
+/* ====== البريد الكبير ====== */
 .email {
   margin-top: 10px;
   font-size: 20px;
@@ -45,7 +48,7 @@ body {
   color: #7a1f37;
 }
 
-/* قسم التواصل */
+/* ====== قسم التواصل ====== */
 .contact {
   padding: 30px;
   max-width: 600px;
@@ -61,7 +64,7 @@ body {
   text-align: center;
 }
 
-/* نموذج الاتصال */
+/* ====== نموذج الاتصال ====== */
 form {
   display: flex;
   flex-direction: column;
@@ -80,9 +83,9 @@ textarea {
   min-height: 100px;
 }
 
-/* زر الإرسال */
+/* ====== زر الإرسال ====== */
 button {
-  background: #a12c4a; /* وردي داكن */
+  background: #a12c4a;
   color: white;
   border: none;
   padding: 12px;
@@ -92,24 +95,28 @@ button {
 }
 
 button:hover {
-  background: #7a1f37; /* لون داكن عند المرور */
+  background: #7a1f37;
 }
 
-/* معلومات الاتصال */
+/* ====== معلومات الاتصال ====== */
 .info {
   margin-top: 20px;
   text-align: center;
 }
 
-/* خريطة */
+/* ====== خريطة صغيرة جدًا ====== */
 .map {
   margin-top: 20px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 200px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* الفوتر */
+/* ====== الفوتر ====== */
 footer {
   background: #f2c6d4;
   text-align: center;
@@ -124,7 +131,7 @@ footer {
   margin-left: 5px;
 }
 
-/* متجاوب */
+/* ====== متجاوب ====== */
 @media (max-width: 768px) {
   .form-section {
     flex-direction: column;
