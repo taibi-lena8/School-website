@@ -2,18 +2,18 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #fdf6f8; /* خلفية وردية فاتحة */
+  background: #fdf6f8;
   color: #333;
 }
 
 /* الهيدر */
 .top {
-  background: #f2c6d4; /* وردي فاتح */
+  background: #f2c6d4;
   padding: 20px;
   text-align: center;
 }
 
-/* الشعار والاسم */
+/* الشعار */
 .logo {
   display: flex;
   justify-content: center;
@@ -21,12 +21,22 @@ body {
   gap: 15px;
 }
 
-.letter {
-  font-size: 64px;
+/* M داخل دائرة */
+.circle-letter {
+  width: 80px;
+  height: 80px;
+  background: #e75480;
+  color: white;
+  font-size: 50px;
   font-weight: bold;
-  color: #a12c4a; /* لون M */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
 
+/* اسم المدرسة */
 .school h1 {
   margin: 0;
   font-size: 22px;
@@ -61,7 +71,6 @@ body {
   text-align: center;
 }
 
-/* نموذج الاتصال */
 form {
   display: flex;
   flex-direction: column;
@@ -80,9 +89,8 @@ textarea {
   min-height: 100px;
 }
 
-/* زر الإرسال */
 button {
-  background: #a12c4a; /* وردي داكن */
+  background: #a12c4a;
   color: white;
   border: none;
   padding: 12px;
@@ -92,10 +100,9 @@ button {
 }
 
 button:hover {
-  background: #7a1f37; /* لون داكن عند المرور */
+  background: #7a1f37;
 }
 
-/* معلومات الاتصال */
 .info {
   margin-top: 20px;
   text-align: center;
