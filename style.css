@@ -101,6 +101,14 @@ button:hover {
   text-align: center;
 }
 
+/* خريطة */
+.map {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 /* الفوتر */
 footer {
   background: #f2c6d4;
