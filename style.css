@@ -21,22 +21,11 @@ body {
   gap: 20px;
 }
 
-/* حرف M كبير، بنفس شكل A السابق */
-.letter {
-  font-size: 140px;       /* كبير جدًا */
-  font-weight: bold;
-  color: #a12c4a;
-  border: 5px solid #a12c4a;
-  padding: 40px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-/* اسم المدرسة */
 .school h1 {
   margin: 0;
   font-size: 28px;
 }
+
 .school span {
   font-size: 16px;
   color: #555;
