@@ -1,45 +1,45 @@
-/* ====== أسلوب الصفحة بالكامل ====== */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #fdf6f8; /* وردي فاتح */
+  background: #fdf6f8;
   color: #333;
 }
 
-/* ====== الهيدر ====== */
 .top {
   background: #f2c6d4;
   padding: 20px;
   text-align: center;
 }
 
-/* ====== الشعار والاسم ====== */
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+}
+
+.logo-svg {
+  width: 80px;
+  height: 80px;
 }
 
 .school h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .school span {
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
 }
 
-/* البريد الكبير */
 .email {
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   color: #7a1f37;
 }
 
-/* قسم التواصل */
 .contact {
   padding: 30px;
   max-width: 600px;
@@ -55,7 +55,6 @@ body {
   text-align: center;
 }
 
-/* نموذج الاتصال */
 form {
   display: flex;
   flex-direction: column;
@@ -74,7 +73,6 @@ textarea {
   min-height: 100px;
 }
 
-/* زر الإرسال */
 button {
   background: #a12c4a;
   color: white;
@@ -89,25 +87,22 @@ button:hover {
   background: #7a1f37;
 }
 
-/* معلومات الاتصال */
 .info {
   margin-top: 20px;
   text-align: center;
 }
 
-/* خريطة صغيرة جدًا */
-.map {
-  margin-top: 20px;
+/* خريطة صغيرة وأنيقة */
+.map iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 150px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: block;
+  margin: 20px auto;
 }
 
-/* الفوتر */
 footer {
   background: #f2c6d4;
   text-align: center;
@@ -122,7 +117,6 @@ footer {
   margin-left: 5px;
 }
 
-/* متجاوب */
 @media (max-width: 768px) {
   .form-section {
     flex-direction: column;
