@@ -4,14 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>متوسطة الشهيد مرخوفي حسين - اتصل بنا</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ====== إعدادات الجسم والخلفية ====== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5; /* وردي فاتح */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* ====== الخلفية الأنمي الشفافة ====== */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('anime-background.png') no-repeat center center/cover;
+            opacity: 0.25; /* شفافية */
+            z-index: 0;
+        }
+
+        /* ====== الهيدر ====== */
+        .header {
+            text-align: center;
+            margin: 30px 0 20px 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 120px;
+            color: #ff69b4; /* لون الوردي */
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 24px;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        /* ====== القسم التواصل ====== */
+        .contact-section {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 182, 193, 0.9); /* وردي فاتح مع شفافية */
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact-section button {
+            padding: 12px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-section button:hover {
+            background-color: #ff85c1;
+        }
+
+        /* ====== أيقونات التواصل ====== */
+        .social {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .social a img {
+            width: 40px;
+            height: 40px;
+        }
+
+    </style>
 </head>
 <body>
+    <!-- الهيدر مع شعار M -->
     <div class="header">
         <h1>M</h1>
         <p>متوسطة الشهيد مرخوفي حسين</p>
     </div>
 
+    <!-- قسم التواصل -->
     <div class="contact-section">
         <h2>اتصل بنا</h2>
         <form>
@@ -20,15 +126,13 @@
             <textarea placeholder="رسالتك" required></textarea>
             <button type="submit">إرسال</button>
         </form>
+
+        <!-- أيقونة فيسبوك -->
         <div class="social">
             <a href="https://www.facebook.com/profile.php?id=61572767962501" target="_blank">
                 <img src="facebook-icon.png" alt="Facebook">
             </a>
         </div>
-    </div>
-
-    <div class="background">
-        <img src="anime-background.png" alt="خلفية أنمي">
     </div>
 </body>
 </html>
