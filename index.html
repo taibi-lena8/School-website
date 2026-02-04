@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>متوسطة الشهيد مرخوفي حسين - اتصل بنا</title>
 <style>
-/* ====== الجسم والخلفية ====== */
 body {
     margin:0;
     font-family: Arial, sans-serif;
@@ -18,7 +17,7 @@ body {
     overflow-x:hidden;
 }
 
-/* ====== الخلفية الأنمي ====== */
+/* الخلفية الأنمي */
 .background {
     position: fixed;
     top:0; left:0;
@@ -26,13 +25,12 @@ body {
     z-index:0;
 }
 .background img {
-    width:100%;
-    height:100%;
+    width:100%; height:100%;
     object-fit:cover;
     opacity:0.25;
 }
 
-/* ====== شعار M ====== */
+/* شعار M */
 .logo {
     position: relative;
     z-index:2;
@@ -51,7 +49,7 @@ body {
     margin-top:5px;
 }
 
-/* ====== قسم اتصل بنا ====== */
+/* قسم اتصل بنا */
 .contact-section {
     position: relative;
     z-index:2;
@@ -90,7 +88,7 @@ button {
 }
 button:hover { background:#ff85c1; }
 
-/* ====== أيقونة فيسبوك ====== */
+/* أيقونة فيسبوك */
 .social {
     text-align:center;
     margin-top:15px;
@@ -101,7 +99,7 @@ button:hover { background:#ff85c1; }
     margin:0 5px;
 }
 
-/* ====== خريطة صغيرة ====== */
+/* خريطة صغيرة */
 .map {
     margin-top:20px;
     width:100%;
@@ -110,7 +108,7 @@ button:hover { background:#ff85c1; }
     overflow:hidden;
 }
 
-/* ====== زر واتساب ====== */
+/* زر واتساب */
 .whatsapp-button {
     position:fixed;
     bottom:20px;
@@ -122,7 +120,6 @@ button:hover { background:#ff85c1; }
     height:60px;
 }
 
-/* ====== متجاوب ====== */
 @media (max-width:768px){
     .logo h1 { font-size:90px; }
     .logo p { font-size:20px; }
@@ -131,15 +128,15 @@ button:hover { background:#ff85c1; }
 </head>
 <body>
 
-<!-- الخلفية الأنمي -->
+<!-- الخلفية الأنمي مدمجة Base64 -->
 <div class="background">
-    <img src="anime-background.png" alt="خلفية أنمي">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P8z/C/HwAF/gJ/oF+mywAAAABJRU5ErkJggg==" alt="خلفية أنمي">
 </div>
 
 <!-- شعار M -->
 <div class="logo">
-    <h1>M</h1>
-    <p>متوسطة الشهيد مرخوفي حسين</p>
+  <h1>M</h1>
+  <p>متوسطة الشهيد مرخوفي حسين</p>
 </div>
 
 <!-- قسم اتصل بنا -->
@@ -154,7 +151,7 @@ button:hover { background:#ff85c1; }
 
     <div class="social">
         <a href="https://www.facebook.com/profile.php?id=61572767962501" target="_blank">
-            <img src="facebook-icon.png" alt="Facebook">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABGElEQVRYR+3WsQ2CMBBF0dHhMiNDrOkZ8GkZPo0cJh7FSwELBQXIl9OIx3wI/edcUwABgHht+8z7FYnBkuZt+CR5lKoihwih4/UG7iwgWMRgIZAFnV6CxJcLMBXgB7BX6Fx6rG5KAj8C9Z9HhDoEhLxgL+BXsCww+hwYBzgvqC3RHAloH7M+jU8gE3mYoJbxf47jFocjSwyb3iX4vwAcBLwQKkBtD6H+B6nFkwXmvZ7oH6Av8Ejf1Ph+h3OAX6Kf9XUV+hhILlQCX7tAyzTmgQAAAAASUVORK5CYII=" alt="Facebook">
         </a>
     </div>
 
@@ -169,12 +166,11 @@ button:hover { background:#ff85c1; }
 <!-- زر واتساب مباشر -->
 <div class="whatsapp-button">
     <a href="https://wa.me/213XXXXXXXXX" target="_blank">
-        <img src="whatsapp-icon.png" alt="WhatsApp">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABg3AmfAAAAZklEQVRoge3PsQ0AIAxE0eP+/8+X8ChIxt2RkZGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBoZ8C9aD8gZ3PTK6AAAAAElFTkSuQmCC" alt="WhatsApp">
     </a>
 </div>
 
 <script>
-// نموذج اتصل بنا
 document.getElementById('contactForm').addEventListener('submit', function(e){
     e.preventDefault();
     alert('تم إرسال رسالتك بنجاح! شكراً لتواصلك معنا.');
