@@ -1,16 +1,19 @@
+/* أسلوب الصفحة بالكامل */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #fdf6f8;
+  background: #fdf6f8; /* خلفية وردية فاتحة */
   color: #333;
 }
 
+/* الهيدر */
 .top {
-  background: #f2c6d4;
+  background: #f2c6d4; /* وردي فاتح */
   padding: 20px;
   text-align: center;
 }
 
+/* الشعار والاسم */
 .logo {
   display: flex;
   justify-content: center;
@@ -21,7 +24,7 @@ body {
 .letter {
   font-size: 64px;
   font-weight: bold;
-  color: #a12c4a;
+  color: #a12c4a; /* لون M */
 }
 
 .school h1 {
@@ -34,6 +37,7 @@ body {
   color: #555;
 }
 
+/* الإيميل الكبير */
 .email {
   margin-top: 10px;
   font-size: 20px;
@@ -41,6 +45,7 @@ body {
   color: #7a1f37;
 }
 
+/* قسم التواصل */
 .contact {
   padding: 30px;
   max-width: 600px;
@@ -56,6 +61,7 @@ body {
   text-align: center;
 }
 
+/* نموذج الاتصال */
 form {
   display: flex;
   flex-direction: column;
@@ -74,8 +80,9 @@ textarea {
   min-height: 100px;
 }
 
+/* زر الإرسال */
 button {
-  background: #a12c4a;
+  background: #a12c4a; /* وردي داكن */
   color: white;
   border: none;
   padding: 12px;
@@ -85,17 +92,33 @@ button {
 }
 
 button:hover {
-  background: #7a1f37;
+  background: #7a1f37; /* لون داكن عند المرور */
 }
 
+/* معلومات الاتصال */
 .info {
   margin-top: 20px;
   text-align: center;
 }
 
+/* الفوتر */
 footer {
   background: #f2c6d4;
   text-align: center;
   padding: 10px;
   font-size: 14px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* متجاوب */
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+  }
 }
