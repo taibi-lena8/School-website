@@ -77,4 +77,43 @@
 
 </body>
 </html
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("rI-X_67czvTjPDZjh"); // Public Key
+})();
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("status");
+const submitBtn = document.getElementById("submit-btn");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
   
+  submitBtn.disabled = true;
+  submitBtn.innerText = "جارٍ الإرسال...";
+
+  emailjs.sendForm(
+    "Taibilena8",         // Service ID
+    "template_r11up8c",   // Template ID
+    this
+  ).then(function() {
+    status.innerText = "✅ تم إرسال رسالتك بنجاح! سنرد عليك قريبًا عبر الإيميل.";
+    status.style.color = "green";
+
+    form.reset();
+    
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerText = "إرسال | Send";
+    }, 2000);
+
+  }, function(error) {
+    status.innerText = "❌ فشل الإرسال، حاول مرة أخرى.";
+    status.style.color = "red";
+    console.log(error);
+    submitBtn.disabled = false;
+    submitBtn.innerText = "إرسال | Send";
+  });
+});
+</script>
