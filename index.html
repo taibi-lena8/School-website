@@ -5,11 +5,75 @@
   <title>متوسطة مرخوفي حسين | Contact</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* الفورم الأساسي */
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    #contact-form button {
+      padding: 10px;
+      background-color: #e75480;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #contact-form button:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+    #status {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* الفوتر */
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    .social-icon {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .globe-icon {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+
+    .globe-icon:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
 
 <header class="top">
   <div class="logo">
+    <!-- شعار SVG -->
     <svg class="logo-svg" viewBox="0 0 100 100">
       <defs>
         <linearGradient id="gradM" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -22,6 +86,7 @@
       </defs>
       <text x="50%" y="65%" text-anchor="middle" font-size="60" font-family="Segoe Script, cursive" fill="url(#gradM)" filter="url(#shadow)">M</text>
     </svg>
+
     <div class="school">
       <h1>متوسطة مرخوفي حسين</h1>
       <span>Merkhofi Hussein Middle School</span>
@@ -46,22 +111,11 @@
     <button type="submit" id="submit-btn">إرسال | Send</button>
   </form>
 
-  <p id="status" style="margin-top:10px; font-weight:bold;"></p>
+  <p id="status"></p>
 
   <div class="info">
     <p>📍 ورقلة – الجزائر</p>
     <p>📧 taibilena8@gmail.com</p>
-  </div>
-
-  <!-- خريطة صغيرة جدًا -->
-  <div class="map-small">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.317057033061!2d5.354671376365053!3d33.3220911250491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2z2KfZhNin2YXYr9mK2Kkg2KfZhNiq2KfZhNis!5e0!3m2!1sar!2sdz!4v1670000000000!5m2!1sar!2sdz" 
-      width="150" height="100" 
-      style="border:0; border-radius:5px;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
   </div>
 
 </section>
@@ -71,7 +125,13 @@
   <p>
     تابعونا على 
     <a href="https://www.facebook.com/profile.php?id=61572767962501" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="social-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" 
+           alt="Facebook" class="social-icon">
+    </a>
+    <!-- كرة الأرضية الصغيرة -->
+    <a href="https://www.google.com/maps/place/Merkhofi+Hussein+Middle+School" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/69/69524.png" 
+           alt="Map" class="globe-icon">
     </a>
   </p>
 </footer>
@@ -117,18 +177,6 @@ form.addEventListener("submit", function(e) {
   });
 });
 </script>
-
-<style>
-.map-small {
-  width: 150px;
-  height: 100px;
-  overflow: hidden;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-</style>
 
 </body>
 </html>
