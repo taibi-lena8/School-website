@@ -77,3 +77,47 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>موقع المدرسة</title>
+</head>
+<body>
+
+  <!-- الفورم -->
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="الاسم" required>
+    <input type="email" name="email" placeholder="الإيميل" required>
+    <textarea name="message" placeholder="الرسالة" required></textarea>
+    <button type="submit">إرسال</button>
+  </form>
+
+  <p id="status"></p>
+
+  <!-- الكود النهائي للجافاسكريبت: ضعيه قبل نهاية الـ body -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("rI-X_67czvTjPDZjh"); // Public Key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "Taibilena8",         // Service ID
+        "template_r11up8c",   // Template ID
+        this
+      ).then(function() {
+        document.getElementById("status").innerText = "✅ تم إرسال الرسالة بنجاح";
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        document.getElementById("status").innerText = "❌ فشل الإرسال";
+        console.log(error);
+      });
+    });
+  </script>
+
+</body>
+</html>
